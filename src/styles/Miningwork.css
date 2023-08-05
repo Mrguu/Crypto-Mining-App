@@ -1,0 +1,268 @@
+.miningWorkContainer {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miningtitle {
+    margin-top: 40px;
+    color: rgb(182, 182, 34);
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+}
+
+.boxContainer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.startbox {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1,
+.box2 {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.data1,
+.data2 {
+    width: 80%;
+}
+
+.data1 h3,
+.data2 h3 {
+    color: rgb(182, 182, 34);
+
+}
+
+.data1 p,
+.data2 p {
+    font-size: 12px;
+}
+
+.box1 img,
+.box2 img {
+    width: 60px;
+    height: 60px;
+}
+
+.centerbox img {
+    width: 500px;
+}
+
+.endbox {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box3,
+.box4 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.data3,
+.data4 {
+    width: 80%;
+}
+
+.data3 h3,
+.data4 h3 {
+    color: rgb(182, 182, 34);
+
+}
+
+.data3 p,
+.data4 p {
+    font-size: 12px;
+}
+
+.box3 img,
+.box4 img {
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .data1 h3,
+    .data2 h3 {
+        color: rgb(182, 182, 34);
+        font-size: medium;
+    }
+
+    .data1 p,
+    .data2 p {
+        font-size: 11px;
+    }
+
+    .data3 h3,
+    .data4 h3 {
+        color: rgb(182, 182, 34);
+        font-size: medium;
+    }
+
+    .data3 p,
+    .data4 p {
+        font-size: 11px;
+    }
+
+    .centerbox img {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .centerbox {
+        display: none;
+    }
+
+    .boxContainer {
+        flex-direction: column;
+    }
+
+    .startbox {
+        width: 80%;
+    }
+
+    .box1,
+    .box2 {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(65, 37, 165);
+        padding: 10px;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+    }
+
+    .data1 h3,
+    .data2 h3 {
+        font-size: large;
+        margin-bottom: 5px;
+    }
+
+    .data2 p,
+    .data1 p {
+        font-size: 12px;
+    }
+
+    .box1 img,
+    .box2 img {
+        margin-right: 20px;
+    }
+
+    .endbox {
+        width: 80%;
+    }
+
+    .box3,
+    .box4 {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(65, 37, 165);
+        padding: 10px;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+    }
+
+    .data3 h3,
+    .data4 h3 {
+        font-size: large;
+        margin-bottom: 5px;
+    }
+
+    .data3 p,
+    .data4 p {
+        font-size: 12px;
+    }
+
+    .box3 img,
+    .box4 img {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .startbox {
+        width: 60%;
+        padding: 10px;
+    }
+
+    .box1,
+    .box2 {
+        flex-direction: column-reverse;
+    }
+
+    .data1 h3,
+    .data2 h3 {
+        font-size: medium;
+        margin-bottom: 5px;
+    }
+
+    .data2 p,
+    .data1 p {
+        font-size: 11px;
+    }
+
+    .box1 img,
+    .box2 img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .endbox {
+        width: 60%;
+        padding: 10px;
+    }
+
+    .box3,
+    .box4 {
+        flex-direction: column-reverse;
+    }
+
+    .data3 h3,
+    .data4 h3 {
+        font-size: medium;
+        margin-bottom: 5px;
+    }
+
+    .data3 p,
+    .data4 p {
+        font-size: 11px;
+    }
+
+    .box3 img,
+    .box4 img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .startbox {
+        width: 90%;
+    }
+
+    .endbox {
+        width: 90%;
+    }
+}

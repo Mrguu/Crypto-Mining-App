@@ -1,0 +1,167 @@
+.InsideNavContainer {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(72, 41, 168);
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 3px 10px #7d95a0;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.InsideNavleft {
+    display: flex;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.InsideNavleft h1,
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(182, 182, 34);
+}
+
+.InsideNavRight {
+    width: 50%;
+    text-align: end;
+}
+
+.NormalLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.NormalLinks a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(182, 182, 34);
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none;
+    border: 2px solid rgb(182, 182, 34);
+
+}
+
+.NormalLinks a:hover {
+    background-color: transparent;
+}
+
+.btnn {
+    text-align: end;
+}
+
+.HiddenLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background-color: black;
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    transition: all .5s ease-in-out;
+}
+
+.HiddenLinks a {
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+.InsideNavRight #close .HiddenLinks {
+    opacity: 0;
+    transform: translateY(-320px);
+
+}
+
+.InsideNavRight #open .HiddenLinks {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 1000px) {
+    .NormalLinks {
+        display: none;
+    }
+
+    .HiddenLinks {
+        display: inline-block;
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .HiddenLinks {
+        display: none;
+    }
+
+    .NormalLinks {
+        display: inline-block;
+    }
+
+    .btnn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .HiddenLinks {
+        right: 130px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .HiddenLinks {
+        right: 80px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .HiddenLinks {
+        right: 20px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 369px) {
+    .HiddenLinks {
+        right: 10px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .InsideNavleft h1,
+    h2 {
+        font-size: medium;
+    }
+
+    .HiddenLinks {
+        width: 200px;
+    }
+}

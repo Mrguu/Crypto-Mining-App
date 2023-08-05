@@ -1,0 +1,268 @@
+.servicesContainer {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.servicesContainer h1 {
+    color: rgb(182, 182, 34);
+    font-weight: bold;
+}
+
+.servicesContainer h4 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.cubeContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.startItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.items1,
+.items2,
+.items3 {
+    display: flex;
+    align-items: center;
+}
+
+.title1,
+.title2,
+.title3 {
+    width: 80%;
+}
+
+
+.title1 h3,
+.title2 h3,
+.title3 h3 {
+    color: rgb(182, 182, 34);
+    margin-bottom: 5px;
+}
+
+.title1 p,
+.title2 p,
+.title3 p {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.items1 img,
+.items2 img,
+.items3 img {
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.centerItem img {
+    width: 500px;
+}
+
+.endItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.items4,
+.items5,
+.items6 {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    align-items: center;
+}
+
+.title4,
+.title5,
+.title6 {
+    width: 80%;
+}
+
+
+.items4 h3,
+.items5 h3,
+.items6 h3 {
+    color: rgb(182, 182, 34);
+    margin-bottom: 5px;
+}
+
+
+.items4 p,
+.items5 p,
+.items6 p {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.items4 img,
+.items5 img,
+.items6 img {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .title1 h3,
+    .title2 h3,
+    .title3 h3 {
+        font-size: medium;
+    }
+
+    .title1 p,
+    .title2 p,
+    .title3 p {
+        font-size: 11px;
+    }
+
+    .items1 img,
+    .items2 img,
+    .items3 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .centerItem img {
+        width: 400px;
+    }
+
+
+    .title4 h3,
+    .title5 h3,
+    .title6 h3 {
+        font-size: medium;
+    }
+
+    .title4 p,
+    .title5 p,
+    .title6 p {
+        font-size: 11px;
+    }
+
+    .items4 img,
+    .items5 img,
+    .items6 img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .centerItem {
+        display: none;
+    }
+
+    .cubeContainer {
+        flex-direction: column;
+    }
+
+    .startItems {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .items1,
+    .items2,
+    .items3 {
+        width: 30%;
+        padding-top: 20px;
+        flex-direction: column-reverse;
+        justify-content: start;
+        border: 2px solid rgb(65, 37, 165);
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+    }
+
+    .items1 img,
+    .items2 img,
+    .items3 img {
+        margin-bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .endItems {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .items4,
+    .items5,
+    .items6 {
+        width: 30%;
+        padding-top: 20px;
+        flex-direction: column-reverse;
+        justify-content: start;
+        border: 2px solid rgb(65, 37, 165);
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+    }
+
+    .items4 img,
+    .items5 img,
+    .items6 img {
+        margin-bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .startItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items1,
+    .items2,
+    .items3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .endItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items4,
+    .items5,
+    .items6 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    .items1,
+    .items2,
+    .items3 {
+        width: 70%;
+    }
+
+    .items4,
+    .items5,
+    .items6 {
+        width: 70%;
+    }
+}

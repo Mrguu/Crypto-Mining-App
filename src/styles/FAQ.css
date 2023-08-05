@@ -1,0 +1,50 @@
+.FAQContainer {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(182, 182, 34);
+}
+
+.faqtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.faqtitle h1 {
+    margin-bottom: 10px;
+}
+
+.faqtitle p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contentContainer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1 {
+    width: 80%;
+    border: 2px solid rgb(65, 37, 165);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.content1 h3 {
+    margin-bottom: 20px;
+    color: rgb(182, 182, 34);
+    text-align: center;
+}

@@ -1,0 +1,178 @@
+.SingUpContainer {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUpHeader {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(72, 41, 168);
+    color: rgb(182, 182, 34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 3px 10px #7d95a0;
+}
+
+.SignUpHeader img {
+    width: 60px;
+    height: 60px;
+}
+
+.SingUpContainer form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    border: 2px solid rgb(65, 37, 165);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    margin: 30px 0;
+}
+
+.SingUpContainer form h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+.formInput label {
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formInput input {
+    height: 35px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid rgb(65, 37, 165);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.checkBox {
+    display: flex;
+    width: 80%;
+
+}
+
+.checkBox input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.checkBox p {
+    width: 100%;
+    font-size: smaller;
+}
+
+.btn {
+    width: 50%;
+    text-align: center;
+}
+
+.SingUpContainer button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(50, 168, 182);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .1s ease-in-out;
+}
+
+.SingUpContainer button:hover {
+    transform: scale(0.9);
+}
+
+.formInput span {
+    color: red;
+    font-size: small;
+    padding: 5px;
+    display: none;
+}
+
+input:invalid[focused="true"] {
+    border: 1px solid;
+}
+
+input:invalid[focused="true"]~span {
+    display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .SingUpContainer form {
+        width: 50%;
+    }
+
+    .formInput {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .SingUpContainer form {
+        width: 70%;
+    }
+
+    .formInput {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .SingUpContainer form h1 {
+        font-size: 25px;
+    }
+
+    .formInput {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .SingUpContainer form {
+        width: 80%;
+    }
+
+    .formInput {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .SingUpContainer form {
+        width: 90%;
+    }
+
+    .SignUpHeader img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .SignUpHeader h1 {
+        font-size: larger;
+    }
+}

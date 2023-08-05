@@ -1,0 +1,172 @@
+.MainContainer {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.topContent {
+    width: 70%;
+    background-color: rgb(23, 91, 150);
+    padding: 20px;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px;
+}
+
+.topContent h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.BoxsContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Boxs {
+    width: 50%;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(18, 18, 105);
+    user-select: none;
+}
+
+.Boxs h5 {
+    text-align: center;
+    background-color: rgb(182, 182, 34);
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Boxinside {
+    color: rgb(182, 182, 34);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.Boxinside img {
+    width: 40px;
+    height: 40px;
+}
+
+.BottomContent {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BottomContent h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(23, 91, 150);
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+
+.Item h3 {
+    border: 1px solid #000;
+    padding: 20px;
+    color: rgb(182, 182, 34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100px;
+}
+
+.Item p {
+    border: 1px solid #000;
+    padding: 30px;
+    font-size: larger;
+}
+
+@media only screen and (max-width: 1000px) {
+    .BoxsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Boxs {
+        width: 80%;
+        height: 200px;
+    }
+
+    .Boxs h5 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .BottomContent {
+        width: 100%;
+    }
+
+    .table h3 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Item p {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Item h3 {
+        font-size: medium;
+        padding: 5px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+
+    .topContent {
+        font-size: small;
+    }
+
+    .Boxs {
+        width: 100%;
+    }
+
+    .Boxs h5 {
+        width: 80%;
+    }
+
+    .Item h3 {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .Item h3 {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .Item h3 {
+        font-size: 7px;
+    }
+}

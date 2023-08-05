@@ -1,0 +1,162 @@
+.FooterContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9, 9, 47);
+}
+
+.footerItems {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footerItem1 {
+    width: 20%;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.contact {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(182, 182, 34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact img {
+    width: 40px;
+    height: 40px;
+}
+
+.footerItem2 {
+    width: 20%;
+    color: #fff;
+}
+
+.footerItem2 h3 {
+    margin-bottom: 20px;
+}
+
+.footerItem2 li {
+    list-style: square;
+    color: blue;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.footerItem2 li:hover {
+    color: #fff;
+}
+
+
+.footerItem3 {
+    width: 20%;
+    color: #fff;
+}
+
+
+.footerItem3 h3 {
+    margin-bottom: 20px;
+}
+
+.footerItem3 li {
+    list-style: square;
+    color: blue;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.footerItem3 li:hover {
+    color: #fff;
+}
+
+
+.footerItem4 {
+    width: 20%;
+}
+
+
+.footerItem4 h3 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footerItem4 li {
+    list-style: square;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.copyright {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding: 20px;
+    background-color: rgb(0, 0, 130);
+    position: absolute;
+    width: 100%;
+}
+
+@media only screen and (max-width: 770px) {
+
+    .footerItem1 {
+        display: none;
+    }
+
+    .footerItem2 {
+        width: 30%;
+    }
+
+    .footerItem3 {
+        width: 30%;
+    }
+
+    .footerItem4 {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .footerItem2 {
+        display: none;
+    }
+
+    .footerItem3 {
+        width: 50%;
+    }
+
+    .footerItem4 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .footerItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerItem3 {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+
+    .footerItem4 {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .footerItem4 {
+        width: 100%;
+    }
+}

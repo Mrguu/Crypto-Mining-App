@@ -1,0 +1,40 @@
+.PayoutContainer {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.PayoutContect {
+    color: #fff;
+    background-color: blueviolet;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: floating 1.5s infinite linear;
+    margin-top: 200px;
+    width: 80%;
+}
+
+@keyframes floating {
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .PayoutContect {
+        font-size: large;
+    }
+}

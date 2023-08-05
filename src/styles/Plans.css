@@ -1,0 +1,95 @@
+.PlansContainer {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.topContect {
+    width: 80%;
+    margin-top: 100px;
+    color: #fff;
+    background-color: rgb(23, 91, 150);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.midContect {
+    font-size: large;
+    background-color: rgb(23, 91, 150);
+    width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.midContect ol {
+    margin-left: 10px;
+    color: #5b1414;
+}
+
+.midContect ol li {
+    margin-bottom: 10px;
+}
+
+.mainContect {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Card {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.Card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.Card h1,
+h2 {
+    color: rgb(182, 182, 34);
+    margin-bottom: 20px;
+}
+
+.Card p {
+    border-bottom: 1px solid rgb(204, 199, 199);
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.Card a button {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    background-color: rgb(174, 255, 0);
+    border: 2px solid rgb(174, 255, 0);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Card a button:hover {
+    background-color: transparent;
+    color: rgb(174, 255, 0);
+}
