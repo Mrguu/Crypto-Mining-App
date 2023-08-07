@@ -16,11 +16,14 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/Crypto-Mining-App" element={<MainPage />} />
-          <Route path="/LogIn&LogOut" element={<SignUpForm />} />
-          <Route path="/Main" element={<Main />} />
-          <Route path="/Plans" element={<Plans />} />
-          <Route path="/Fund" element={<Fund />} />
-          <Route path="/Payout" element={<Payout />} />
+          <Route
+            path="/Crypto-Mining-App/LogIn&LogOut"
+            element={<SignUpForm />}
+          />
+          <Route path="/Crypto-Mining-App/Main" element={<Main />} />
+          <Route path="/Crypto-Mining-App/Plans" element={<Plans />} />
+          <Route path="/Crypto-Mining-App/Fund" element={<Fund />} />
+          <Route path="/Crypto-Mining-App/Payout" element={<Payout />} />
         </Routes>
         {<Footer />}
       </BrowserRouter>
