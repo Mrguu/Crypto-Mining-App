@@ -14,6 +14,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<MainPage />} />
           <Route path="/Crypto-Mining-App" element={<MainPage />} />
           <Route path="/LogIn&LogOut" element={<SignUpForm />} />
           <Route path="/Main" element={<Main />} />
