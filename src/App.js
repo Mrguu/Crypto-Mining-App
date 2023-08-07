@@ -1,20 +1,28 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Miningwork from "./pages/Miningwork";
-import FAQ from "./pages/FAQ";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainPage from "./MainPage";
+import SignUpForm from "./pages/SignUpForm";
+import Footer from "./components/Footer";
+import Main from "./Main";
+import Plans from "./pages/Plans";
+import Fund from "./pages/Fund";
+import Payout from "./pages/Payout";
+import "./styles/App.css";
 
 function App() {
   return (
     <div>
-      {<Navbar />}
-      {<Home />}
-      {<About />}
-      {<Services />}
-      {<Miningwork />}
-      {<FAQ />}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/LogIn&LogOut" element={<SignUpForm />} />
+          <Route path="/Main" element={<Main />} />
+          <Route path="/Plans" element={<Plans />} />
+          <Route path="/Fund" element={<Fund />} />
+          <Route path="/Payout" element={<Payout />} />
+        </Routes>
+        {<Footer />}
+      </BrowserRouter>
     </div>
   );
 }
