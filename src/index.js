@@ -22,7 +22,7 @@ root.render(
         <Route path="/Fund" element={<Fund />} />
         <Route path="/Payout" element={<Payout />} />
       </Routes>
+      {<Footer />}
     </BrowserRouter>
-    {<Footer />}
   </React.StrictMode>
 );
