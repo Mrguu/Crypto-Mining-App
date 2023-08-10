@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const SignupInput = (props) => {
   const [focused, setFocused] = useState(false);
-  const { id, label, onChange, errMessage, ...inputProps } = props;
+  const { id, label, onChange, errMessage, required, ...inputProps } = props;
 
   const handleFocused = (e) => {
     setFocused(true);
@@ -16,6 +16,7 @@ const SignupInput = (props) => {
         onChange={onChange}
         onBlur={handleFocused}
         focused={focused.toString()}
+        required={required}
       />
       <span>{errMessage}</span>
     </div>

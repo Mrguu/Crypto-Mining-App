@@ -37,7 +37,7 @@ function SignUpForm() {
         "Fullname shouldn't include any special character and numbers!",
       label: "Full Name",
       required: true,
-      pattern: "^[A-Za-z]{6,16}$",
+      pattern: "^[A-Za-z]{3,16}$",
     },
     {
       id: "3",
@@ -88,16 +88,23 @@ function SignUpForm() {
       setShow(true);
     }
   });
-
+  console.log(values.username);
   const handleClick = () => {
-    console.log(values);
-    if (
-      values.username &&
-      values.fullname &&
-      values.email &&
-      values.password &&
-      values.confirmpassword
-    ) {
+    let isValid = true;
+
+    inputs.forEach((input) => {
+      if (input.pattern) {
+        const pattern = new RegExp(input.pattern);
+        if (!pattern.test(values[input.name])) {
+          alert(`${input.errMessage}`);
+          isValid = false;
+          return;
+        }
+      }
+    });
+
+    if (isValid) {
+      // Save data to localStorage and perform other actions
       localStorage.setItem("Username", values.username);
       localStorage.setItem("Fullname", values.fullname);
       localStorage.setItem("Email", values.email);
@@ -105,6 +112,9 @@ function SignUpForm() {
       localStorage.setItem("ConfirmPassword", values.confirmpassword);
       localStorage.setItem("Register", values.email);
       alert("Account created successfully!");
+      window.location.reload();
+    } else {
+      alert("Please fill all the fields correctly");
       window.location.reload();
     }
   };

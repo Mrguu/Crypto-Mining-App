@@ -22,11 +22,11 @@ function InsideNav() {
       </div>
       <div className="InsideNavRight">
         <div className="NormalLinks">
-          <Link to="/Main">Dashbord</Link>
-          <Link to="/Plans">Plans</Link>
-          <Link to="/Fund">Fund</Link>
-          <Link to="/Payout">Payout</Link>
-          <Link to="/Payout">Referral</Link>
+          <Link to="/Crypto-Mining-App/Main">Dashbord</Link>
+          <Link to="/Crypto-Mining-App/Plans">Plans</Link>
+          <Link to="/Crypto-Mining-App/Fund">Fund</Link>
+          <Link to="/Crypto-Mining-App/Payout">Payout</Link>
+          <Link to="/Crypto-Mining-App/Payout">Referral</Link>
         </div>
         <button
           className="btnn"
@@ -37,19 +37,19 @@ function InsideNav() {
         </button>
         <div id={openLinks ? "open" : "close"}>
           <ul className="HiddenLinks">
-            <Link to="/Main">
+            <Link to="/Crypto-Mining-App/Main">
               <li>Dashbord</li>
             </Link>
-            <Link to="/Plans">
+            <Link to="/Crypto-Mining-App/Plans">
               <li>Plans</li>
             </Link>
-            <Link to="/Fund">
+            <Link to="/Crypto-Mining-App/Fund">
               <li>Fund</li>
             </Link>
-            <Link to="/Payout">
+            <Link to="/Crypto-Mining-App/Payout">
               <li>Payout</li>
             </Link>
-            <Link to="/Payout">
+            <Link to="/Crypto-Mining-App/Payout">
               <li>Referral</li>
             </Link>
           </ul>
