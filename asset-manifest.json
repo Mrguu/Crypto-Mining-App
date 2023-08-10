@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Crypto-Mining-App/static/css/main.30a0ba40.css",
-    "main.js": "/Crypto-Mining-App/static/js/main.9e538ad2.js",
+    "main.js": "/Crypto-Mining-App/static/js/main.edd5bc6e.js",
     "static/media/dogecoin.png": "/Crypto-Mining-App/static/media/dogecoin.764b93394793bd3b0ab9.png",
     "static/media/TRX.png": "/Crypto-Mining-App/static/media/TRX.bdeba9729128f837ea15.png",
     "static/media/LTC.png": "/Crypto-Mining-App/static/media/LTC.ff7e89a7b9ddb5241b40.png",
@@ -26,10 +26,10 @@
     "static/media/item2.png": "/Crypto-Mining-App/static/media/item2.46dbd20f82b33c9215ab.png",
     "index.html": "/Crypto-Mining-App/index.html",
     "main.30a0ba40.css.map": "/Crypto-Mining-App/static/css/main.30a0ba40.css.map",
-    "main.9e538ad2.js.map": "/Crypto-Mining-App/static/js/main.9e538ad2.js.map"
+    "main.edd5bc6e.js.map": "/Crypto-Mining-App/static/js/main.edd5bc6e.js.map"
   },
   "entrypoints": [
     "static/css/main.30a0ba40.css",
-    "static/js/main.9e538ad2.js"
+    "static/js/main.edd5bc6e.js"
   ]
 }
